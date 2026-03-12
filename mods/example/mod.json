@@ -1,0 +1,29 @@
+{
+    "id": "Jawsh RPG 2",
+    "name": "Jawsh RPG 2 DEMO ",
+    "subtitle": "The Sins of Mediashare",
+
+    "version": "v1.0.0",
+    "engineVer": "v0.10.0-dev",
+
+    "chapter": 2,
+
+    "map": "jawsh_house",
+    "party": ["jawsh"], 
+    "inventory": {
+        "items": ["davesbox", "greenjuice", "mugbeer", "primesub", "orange", "orange", "orange", "tenburgers", "tenburgers", "tenburgers", "tenburgers"],
+        "key_items": ["emergencyphone"],
+        "weapons": [],
+        "armors": ["airbag", "blueribbon", "brokenwatch", "bullseye", "cloak", "delusionbrace", "dreammask", "ducttapedjeans", "glassbrick", "heartcharm", "lincolnbust", "metrognome", "oobleck", "overalls", "panicbutton", "pickelhaube", "shadowmantle", "silvercoin", "skilltree", "stache", "dvdcase", "dvdcase", "dvdcase"] 
+    },
+    "equipment": {
+        "jawsh": {
+            "weapon": "whitegloves",
+            "armor": []
+        },
+                "vinny": {
+            "weapon": "tophat",
+            "armor": []
+        }
+    }
+}

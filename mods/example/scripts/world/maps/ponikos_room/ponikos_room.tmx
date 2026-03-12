@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="113">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="poniko_on"/>
+ </properties>
+ <tileset firstgid="1" source="../../tilesets/poniko_room.tsx"/>
+ <tileset firstgid="4" source="../../tilesets/minecraft.tsx"/>
+ <layer id="6" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#ff00ff" id="3" name="objects_below">
+  <object id="107" name="dark" gid="2" x="0" y="480" width="640" height="480"/>
+  <object id="108" name="scary" gid="3" x="0" y="480" width="640" height="480"/>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="2" name="collision">
+  <object id="29" x="524" y="386">
+   <polygon points="0,0 -32,-30 -32,-66 36,-66 66,-28 66,0"/>
+  </object>
+  <object id="37" x="30" y="392" width="590" height="30"/>
+  <object id="41" x="595" y="290" width="20" height="102"/>
+  <object id="45" x="106" y="300" width="14" height="10"/>
+  <object id="46" x="120" y="290" width="10" height="10"/>
+  <object id="47" x="130" y="280" width="10" height="10"/>
+  <object id="48" x="140" y="270" width="10" height="10"/>
+  <object id="49" x="150" y="260" width="10" height="10"/>
+  <object id="50" x="160" y="250" width="10" height="10"/>
+  <object id="51" x="170" y="250" width="10" height="10"/>
+  <object id="52" x="160" y="260" width="10" height="10"/>
+  <object id="53" x="150" y="270" width="10" height="10"/>
+  <object id="54" x="140" y="280" width="10" height="10"/>
+  <object id="55" x="130" y="290" width="10" height="10"/>
+  <object id="56" x="120" y="300" width="10" height="10"/>
+  <object id="57" x="106" y="310" width="14" height="10"/>
+  <object id="59" x="70" y="340" width="10" height="10"/>
+  <object id="60" x="60" y="350" width="10" height="10"/>
+  <object id="61" x="50" y="360" width="10" height="10"/>
+  <object id="62" x="40" y="370" width="10" height="10"/>
+  <object id="63" x="50" y="370" width="10" height="10"/>
+  <object id="64" x="60" y="360" width="10" height="10"/>
+  <object id="65" x="70" y="350" width="10" height="10"/>
+  <object id="67" x="80" y="340" width="8" height="10"/>
+  <object id="68" x="180" y="250" width="50" height="10"/>
+  <object id="73" x="230" y="190" width="10" height="70"/>
+  <object id="74" x="240" y="160" width="102" height="93"/>
+  <object id="76" x="342" y="240" width="8" height="30"/>
+  <object id="77" x="350" y="240" width="40" height="40"/>
+  <object id="78" x="390" y="240" width="30" height="30"/>
+  <object id="81" x="420" y="250" width="10" height="10"/>
+  <object id="82" x="430" y="230" width="20" height="30"/>
+  <object id="87" x="450" y="260" width="10" height="10"/>
+  <object id="88" x="460" y="260" width="10" height="10"/>
+  <object id="89" x="460" y="270" width="10" height="10"/>
+  <object id="90" x="470" y="270" width="10" height="10"/>
+  <object id="91" x="470" y="280" width="10" height="10"/>
+  <object id="92" x="480" y="280" width="10" height="10"/>
+  <object id="93" x="480" y="290" width="10" height="10"/>
+  <object id="98" x="530" y="300" width="10" height="10"/>
+  <object id="99" x="520" y="300" width="10" height="10"/>
+  <object id="100" x="530" y="310" width="10" height="10"/>
+  <object id="101" x="490" y="290" width="30" height="10"/>
+  <object id="103" x="40" y="380" width="10" height="12"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="objects_party">
+  <object id="43" name="transition" x="82" y="346">
+   <properties>
+    <property name="map" value="room2"/>
+    <property name="marker" value="entry"/>
+   </properties>
+   <polygon points="0,0 24,-24 24,-90 0,-66"/>
+  </object>
+  <object id="105" name="interactable" x="110" y="270" width="20" height="34">
+   <properties>
+    <property name="cutscene" value="poniko"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="4" name="markers">
+  <object id="23" name="entry" x="130" y="360">
+   <point/>
+  </object>
+  <object id="25" name="spawn" x="310" y="370">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" id="7" name="controllers">
+  <object id="106" name="toggle" x="80" y="230">
+   <properties>
+    <property name="flag" value="poniko_flicker"/>
+    <property name="target" type="object" value="105"/>
+    <property name="value" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="toggle" x="80" y="160">
+   <properties>
+    <property name="flag" value="poniko_scary"/>
+    <property name="target" type="object" value="108"/>
+    <property name="value" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="toggle" x="60" y="100">
+   <properties>
+    <property name="flag" value="poniko_dark"/>
+    <property name="target" type="object" value="107"/>
+    <property name="value" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
