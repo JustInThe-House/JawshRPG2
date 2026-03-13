@@ -28,7 +28,8 @@ function GonerChoice:init(x, y, choices, on_complete, on_select)
     self.font = Assets.getFont("main")
 
     self.soul = Sprite("player/heart_blur")
-    self.soul:setScale(2, 2)
+    --self.soul:setScale(2, 2)
+    self.soul:setScale(0.5) -- MUST be done here (not in hook) so that it affects the menu
     self.soul:setColor(Kristal.getSoulColor())
 	if Kristal.getState() ~= Game and MainMenu.mod_list:getSelectedMod().soulColor then
 		self.soul:setColor(unpack(MainMenu.mod_list:getSelectedMod().soulColor))
@@ -46,7 +47,7 @@ function GonerChoice:init(x, y, choices, on_complete, on_select)
     self.selected_x = 1
     self.selected_y = 1
 
-    self.soul_offset_x = 0
+    self.soul_offset_x = 60 -- also changed since dont want to make hook
     self.soul_offset_y = 0
 
     self.soul_target_x = 0

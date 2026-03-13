@@ -2,8 +2,11 @@ return {
     first_enter = function(cutscene, event)
         local jawsh = cutscene:getCharacter("jawsh")
         local vinny = cutscene:getCharacter("vinny")
+        Kristal.Console:log(vinny.x)
+        
+        local meet_x, meet_y = cutscene:getMarker("vinny_meet")
 
-        cutscene:wait(1)
+        cutscene:wait(1.5)
         jawsh:setFacing("right")
         cutscene:wait(0.5)
         jawsh:setFacing("left")
@@ -13,45 +16,82 @@ return {
         jawsh:setFacing("left")
         cutscene:wait(0.5)
         jawsh:setFacing("down")
-        cutscene:fadeOut(0, { music = true })
-
+        --cutscene:fadeOut(0, { music = true })
         -- may do a fade and show the entire hub area in the future. then fade back to jawsh
+
+        local pause_time = 3
+
 
         cutscene:setSpeaker(jawsh)
         cutscene:text("* Wow,[wait:5] this place is surprisingly big!", "happy")
         cutscene:text("* But I'm seeing a weird theme.", "neutral")
+        -- pan to each of these
         cutscene:text("* Because that's the Wacky Wheel...", "neutral")
         cutscene:text("* Because that's the Wacky Wheel...", "neutral")
-        cutscene:text("* And up here...", "neutral")
-        cutscene:text("* This is the spawn tree!", "neutral")
-        cutscene:text("* It's like this world was made specifically for me...", "neutral")
-        cutscene:text("* That's too parasocial for my taste.", "neutral")
+        pause_time = 3
+        jawsh:walkTo(meet_x, meet_y, pause_time, "right")
+        --starts walking over to where he meets vinny
+        cutscene:text("* And over here...", "neutral")
+
+
+        cutscene:text("* ...this is the spawn tree!", "neutral")
+        cutscene:text("* It's like this world was made specifically around me...", "neutral")
+        cutscene:wait(1.5)
+        cutscene:text("* That's a bit too parasocial.", "neutral")
         cutscene:text("* I'm getting out of here.", "neutral")
 
-        cutscene:wait(2)
-        cutscene:text("* ...[wait:5]I can't find the headset.", "neutral")
-        cutscene:wait(2)
+        pause_time = 1
+        local volume = 2
+        cutscene:wait(pause_time)
+        Assets.playSound("ui_cant_select",volume)
+        cutscene:wait(pause_time)
+        Assets.playSound("ui_cant_select",volume)
+        pause_time = 0.7
+        cutscene:wait(pause_time)
+        cutscene:text("* ...[wait:10]I can't find the headset.", "neutral")
+        cutscene:wait(0.3)
+        Assets.playSound("ui_cant_select",volume)
+        cutscene:wait(pause_time)
+        Assets.playSound("ui_cant_select",volume)
+        cutscene:wait(pause_time)
+        Assets.playSound("ui_cant_select",volume)
+        cutscene:wait(pause_time)
         cutscene:text("* Oh,[wait:5] come on already,[wait:5] just pull it off![wait:7] Grrrrah!", "mad")
-
+        Assets.playSound("ui_cant_select",volume)
         cutscene:text("* Get me out of this digital nightmare!", "mad")
-        cutscene:wait(2)
+        cutscene:wait(0.1)
+        Assets.playSound("ui_cant_select",volume)
+        cutscene:wait(pause_time)
+        Assets.playSound("ui_cant_select",volume)
+        cutscene:wait(pause_time)
+        Assets.playSound("ui_cant_select",volume)
+        cutscene:wait(0.3)
         Game.world.music:pause()
+        Game.world.music.volume = 0
         Assets.playSound("jawsh_vinny_jumpscare")
         cutscene:setSpeaker(vinny)
-        cutscene:text("* JAWSH!", "idle",
-                          { advance = true, auto = true })
-                          cutscene:setSpeaker(jawsh)
-        cutscene:text("* JAWSH!", "shocked")
+        cutscene:text("* [noskip]JAWSH![wait:10]", "idle",
+                      { advance = true, auto = true })
+        cutscene:setSpeaker(jawsh)
+        cutscene:text("* [noskip]AAAAAAHHHH!", "shocked")
         --vinnys theme plays
-        --vinny walk down
+
+        
 
         cutscene:wait(2)
 
         cutscene:text("* Oh.[wait:10] My.[wait:10] God.", "shocked")
         cutscene:text("* I almost had a heart attack.", "shocked")
-        cutscene:text("* Guess I can still feel stuff in here.", "shocked")
 
-        cutscene:setSpeaker(vinny)
+        cutscene:text("* Guess I can still feel things in here.", "shocked")
+Game.world.music:resume()
+        Game.world.music:fade(1,5)
+        
+        pause_time = 2.5
+        jawsh:setFacing("up")
+        cutscene:wait(cutscene:walkTo(vinny,meet_x, meet_y-40, pause_time, "down"))
+                
+cutscene:setSpeaker(vinny)
         cutscene:text("* Yooooo,[wait:5] what's up Jawsh?", "happy")
         cutscene:text("* How", "happy")
 
@@ -59,16 +99,20 @@ return {
         cutscene:text("* Vinny,[wait:5] what are you doing here?", "neutral")
 
         cutscene:setSpeaker(vinny)
-        cutscene:text("* Well, I was doing some,[wait:5], uh,[wait:5] \"other\" stuff in VR...", "neutral")
+        cutscene:text("* Well, I was doing some,[wait:5] uh,[wait:5] \"other\" stuff in VR...", "neutral")
         cutscene:text("* But then I got transported here for whatever reason.", "neutral")
+        cutscene:text("* Kinda ruined my good time.", "neutral")
 
         cutscene:setSpeaker(jawsh)
-        cutscene:text("* Can you take your headset off?", "neutral")
+        cutscene:text("* Can you take your VR headset off?", "neutral")
 
         cutscene:setSpeaker(vinny)
-        cutscene:text("* What? Can I take my headset off?", "shocked")
-        cutscene:text("* Of course I ca--", "neutral")
-        --vinny disappears, then reappears
+        cutscene:text("* What?[wait:5] Can I take my headset off?", "shocked")
+        cutscene:text("* Of course I ca--", "neutral", {auto = true})
+        vinny.visible = false
+        cutscene:wait(2)
+        vinny.visible = true
+        cutscene:wait(0.5)
         cutscene:text("* See?", "neutral")
 
         cutscene:setSpeaker(jawsh)
@@ -77,12 +121,21 @@ return {
 
 
         cutscene:setSpeaker(vinny)
-        cutscene:text("* I think you've gotten a little TOO online,[wait:5] Jawsh.", "happy")
+        cutscene:text("* I think you've gotten a little TOO online,[wait:3] Jawsh.", "happy")
 
         cutscene:setSpeaker(jawsh)
         cutscene:text("* Shut up.", "mad")
-        cutscene:text("* The point is,[wait:5] I'm stuck in here,[wait:5] and I need your help to get me out.", "neutral")
+        cutscene:text("* The point is,[wait:3] I'm stuck in here,[wait:3] and I need your help to get me out.", "neutral")
         cutscene:text("* Let's look around and find someone who can help us.", "neutral")
+        Game:addPartyMember("vinny")
+        vinny:convertToFollower()
+        cutscene:interpolateFollowers()
+        cutscene:wait(cutscene:attachFollowers(0.5))
+
+        cutscene:setSpeaker()
+        cutscene:text("* Vinny joined the party!")
+
+        Game:setFlag("met_vinny", true)
         -- add vinny to team
     end,
     transition = function(cutscene, event)

@@ -1,9 +1,7 @@
 local Map, super = Class(Map)
 
 function Map:onEnter()
-  Game:setFlag("poniko_flicker", "false")
-  Game:setFlag("poniko_dark", "false") 
-  Game:setFlag("poniko_scary", "false") 
+  Game:setFlag("met_vinny",Game:getFlag("met_vinny",false))
 end
 
 return Map

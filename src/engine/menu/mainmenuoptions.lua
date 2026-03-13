@@ -577,7 +577,7 @@ function MainMenuOptions:initializeOptions()
                             self:setState("BORDER")
                         end)
 
-    self:registerConfigOption({ "general", "graphics" }, "Simplify VFX", "simplifyVFX")
+    --self:registerConfigOption({ "general", "graphics" }, "Simplify VFX", "simplifyVFX") removed bc wont use
 
     self:registerOption("graphics", "Target FPS", function (x, y)
                             if Kristal.Config["fps"] > 0 then
@@ -596,9 +596,9 @@ function MainMenuOptions:initializeOptions()
         love.window.setVSync(toggled and 1 or 0)
     end)
     self:registerConfigOption("graphics", "Frame Skip", "frameSkip")
-    self:registerConfigOption("graphics", "Broken Menu Boxes", "brokenMenuBoxes", function (toggled)
+    --[[self:registerConfigOption("graphics", "Broken Menu Boxes", "brokenMenuBoxes", function (toggled)
         self.menu.mod_list:buildModList()
-    end)
+    end)]] -- i dont want this
 
     ---------------------
     -- Engine Options

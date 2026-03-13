@@ -8,9 +8,9 @@ return {
   tileheight = 40,
   spacing = 0,
   margin = 0,
-  columns = 5,
+  columns = 6,
   image = "../../../assets/sprites/tilesets/jawsh_house.png",
-  imagewidth = 200,
+  imagewidth = 240,
   imageheight = 160,
   objectalignment = "unspecified",
   tilerendersize = "tile",
@@ -26,6 +26,6 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 20,
+  tilecount = 24,
   tiles = {}
 }

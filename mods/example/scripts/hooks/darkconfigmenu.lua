@@ -55,7 +55,7 @@ function DarkConfigMenu:update()
             self.ui_move:play()
         end
 
-        self.currently_selected = MathUtils.clamp(self.currently_selected, 1, 7)
+        self.currently_selected = MathUtils.clamp(self.currently_selected, 1, 8)
     elseif self.state == "VOLUME" then
         if Input.pressed("cancel") or Input.pressed("confirm") then
             Kristal.setVolume(Utils.round(Kristal.getVolume() * 100) / 100)
@@ -151,7 +151,7 @@ function DarkConfigMenu:draw()
         if self.state == "VOLUME" then
             Draw.setColor(PALETTE["world_text_selected"])
         end
-        love.graphics.print(Utils.round(Kristal.getVolume() * 100) .. "%", 348, 38 + (0 * 32))
+        love.graphics.print(MathUtils.round(Kristal.getVolume() * 100) .. "%", 348, 38 + (0 * 32))
         Draw.setColor(PALETTE["world_text"])
         if self.state == "FPS" then
             Draw.setColor(PALETTE["world_text_selected"])
