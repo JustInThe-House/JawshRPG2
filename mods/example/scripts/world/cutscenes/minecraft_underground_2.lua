@@ -85,9 +85,9 @@ return {
         cutscene:text("* IIIII'm[wait:3] Happy Guy!", "neutral", "happyguy", { top = false })
 
         happyguy:setSprite("walk/down")
-        cutscene:text("* How did you guys get here? I thought I was the only one in this world!", "neutral", "happyguy", { top = false })
-        cutscene:text("* Gasp! *   Are you The Player?", "neutral", "happyguy", { top = false })
-        cutscene:text("* Uhh,[wait:10] yeah,[wait:3] sure,[wait:3] buddy.", "neutral", "jawsh",
+        cutscene:text("* How did you guys get here? I thought I was the only one!", "neutral_forward", "happyguy", { top = false })
+        cutscene:text("* Gasp! *[wait:7]   Are you The Player?", "neutral", "happyguy", { top = false })
+        cutscene:text("* Uhh,[wait:10] yeah,[wait:2] sure,[wait:2] buddy.", "neutral", "jawsh",
                       { top = false })
         cutscene:text("* Listen,[wait:5] we're looking for a Mediashare fragment.", "neutral", "vinny", { top = false })
         cutscene:text("* Have you seen or heard anything about it?", "neutral", "vinny", { top = false })

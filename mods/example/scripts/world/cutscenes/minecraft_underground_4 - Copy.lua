@@ -15,7 +15,7 @@ return {
         cutscene:attachCamera(time_pan_1)
         cutscene:wait(time_pan_1)
         cutscene:setSpeaker()
-        cutscene:text("* [speed:0.7]Aaaand[wait:5][speed:1] he's already getting killed.", "neutral", "jawsh")
+        cutscene:text("* [speed:0.7]Aaaand[speed:1] he's already getting killed.", "neutral", "jawsh")
         cutscene:text("* Hang on a second![wait:5] We'll be right there!", "neutral", "jawsh")
         cutscene:wait(0.2)
     end,
@@ -53,21 +53,24 @@ return {
 
         cutscene:text("* Look man,[wait:5] you're clearly not cut out for fighting down here.", "neutral")
 
-        cutscene:text("* Why don't you just join our party and--", "happy")
+        cutscene:text("* Why don't you just join our party and--", "happy",
+                      { advance = true, auto = true })
         cutscene:setSpeaker(happyguy)
         local time_2 = 0.5
+        Assets.playSound("jump", 1, 1)
         happyguy:jumpTo("dropdown", 4, time_2)
 
         cutscene:wait(time_2)
 
 
-        happyguy:setSprite("walk/right")
+        happyguy:setFacing("right")
 
         cutscene:text("* Anyways,[wait:5] if you hit that lever,[wait:5] you'll shut off the smoke stacks.",
             { top = false })
 
         cutscene:text("* I'll head back so we can clear it out faster!", { top = false })
-        happyguy:setSprite("walk/down")
+        happyguy:setFacing("down")
+        happyguy:resetSprite()
 
         happyguy:walkTo("move_happyguy1", 1.4, "down", true, "linear", function()
             happyguy.x = happyguy.x + 200

@@ -12,6 +12,8 @@ return {
         cutscene:wait(1)
         cutscene:fadeIn(2, { music = true })
         cutscene:wait(2)
+
+        --trapezoidal treadmill
         --[[cutscene:text("* Ah!", "real_shocked")
         cutscene:wait(3)
         cutscene:text("* ...[wait:5]That was a weird dream...", "real_shocked")

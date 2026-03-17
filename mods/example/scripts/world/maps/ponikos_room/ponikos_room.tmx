@@ -7,7 +7,6 @@
   <property name="music" value="poniko_on"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/poniko_room.tsx"/>
- <tileset firstgid="4" source="../../tilesets/minecraft.tsx"/>
  <layer id="6" name="Tile Layer 1" width="16" height="12">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

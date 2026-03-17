@@ -25,6 +25,7 @@ function MainMenuCredits:init(menu)
                 "Ralsei",
                 "Deer",
                 "Swaglexoid",
+                "PaleDays",
                 "Newsteevie",
                 { "Special Thanks",   COLORS.silver },
                 "Sam U37",

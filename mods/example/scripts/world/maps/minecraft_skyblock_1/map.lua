@@ -12,10 +12,6 @@ function Map:onEnter()
   --self.bg:setScale(1.5)
   self.bg:setParallax(0.1,0.1)
   Game.world:addChild(self.bg)
-
-                      self.finger = JawshFinger(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 3)
-                    Game.world:addChild(self.finger)
-  
 end
 
 return Map

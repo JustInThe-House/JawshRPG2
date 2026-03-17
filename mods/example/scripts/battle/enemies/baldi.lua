@@ -15,15 +15,18 @@ function Baldi:init()
     self.text = {
         "* Baldi looks disapprovingly at\nVinny and Jawsh.",
         "* Baldi's ruler slapping frequency\nincreases.",
-        "* Looks like you'll both be failing math again!",
+        "* Looks like you'll both be failing math again.",
     }
 
     self.waves = {
-        "skeleton/single_shot",
-        "skeleton/multi_shot"
+        "baldi/ruler",
+        "baldi/question"
     }
 
-    self.dialogue = {}
+    self.dialogue = {
+        "Time for everyone's favorite subject!",
+        "[speed:0.7]Problem 1:[wait:10]You!"
+    }
 end
 
 function Baldi:update()

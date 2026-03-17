@@ -26,12 +26,6 @@ return {
       firstgid = 181,
       filename = "../../tilesets/minecraft_fire.tsx",
       exportfilename = "../../tilesets/minecraft_fire.lua"
-    },
-    {
-      name = "castle",
-      firstgid = 213,
-      filename = "../../tilesets/castle.tsx",
-      exportfilename = "../../tilesets/castle.lua"
     }
   },
   layers = {

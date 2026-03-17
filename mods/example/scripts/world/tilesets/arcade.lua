@@ -2,15 +2,15 @@ return {
   version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.11.2",
-  name = "minecraft_trees",
+  name = "arcade",
   class = "",
-  tilewidth = 200,
-  tileheight = 400,
+  tilewidth = 40,
+  tileheight = 40,
   spacing = 0,
   margin = 0,
-  columns = 6,
-  image = "../../../assets/sprites/tilesets/minecraft_trees.png",
-  imagewidth = 1200,
+  columns = 10,
+  image = "../../../assets/sprites/tilesets/arcade.png",
+  imagewidth = 400,
   imageheight = 400,
   objectalignment = "unspecified",
   tilerendersize = "tile",
@@ -21,11 +21,11 @@ return {
   },
   grid = {
     orientation = "orthogonal",
-    width = 200,
-    height = 400
+    width = 40,
+    height = 40
   },
   properties = {},
   wangsets = {},
-  tilecount = 6,
+  tilecount = 100,
   tiles = {}
 }

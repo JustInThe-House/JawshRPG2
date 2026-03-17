@@ -92,7 +92,7 @@ function character:init()
     -- Message shown on gameover (optional)
     self.gameover_message = {
         "This guy phuckin'\nsucks at JRPG2!",
-        "Get a [speed:0.5]real[speed:1] gamer\nin here!",
+        "Get a [speed:0.5]real[wait:5][speed:1] gamer\nin here!",
         "History major btw",
         "Dream would've beaten that guy."
     }

@@ -13,9 +13,9 @@ function Kinograph:init()
 
     self.check = ""
     self.text = {
-        "* Kinograph views your investments.[wait:10]\n* It's only silver.",
-        "* Kinograph says to buy his KinoCoin.[wait:10]\n* It's more than just a cryptocurrency.",
-        "* Kinograph checks the market.\n* The S&PLive500 is booming."
+        "* Kinograph views your investments.[wait:7]\n* It's only silver.",
+        "* Kinograph says to buy his KinoCoin.[wait:7]\n* It's more than just a cryptocurrency.",
+        "* Kinograph checks the market.[wait:7]\n* The S&PLive500 is booming."
     }
 
     self.waves = {
@@ -39,7 +39,7 @@ end
 
 function Kinograph:onHurt(damage, battler)
     super.onHurt(self, damage, battler)
-    Game.battle.timer:tween(0.5, self:getActiveSprite(), { sum = 16.9 })
+    Game.battle.timer:tween(0.5, self:getActiveSprite(), { sum = math.min(self:getActiveSprite().sum + 15,16.9) })
 end
 
 return Kinograph

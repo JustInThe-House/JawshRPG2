@@ -9,8 +9,8 @@ return {
   height = 101,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 263,
+  nextlayerid = 7,
+  nextobjectid = 269,
   properties = {
     ["music"] = "wegas_challenge"
   },

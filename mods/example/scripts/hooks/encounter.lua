@@ -112,7 +112,7 @@ function Encounter:onTurnEnd()
                 battler.chara:addStatBuff("undervolt", 1)
                 battler.chara:addStatBuff("temp_attack", battler.chara:getStat("undervolt"))
             end
-            Kristal.Console:log(Utils.dump({ "hello" }))
+            --Kristal.Console:log(Utils.dump({ "did attack!" }))
         end
         -- Kristal.Console:log(battler.chara:getStat("undervolt"))
 

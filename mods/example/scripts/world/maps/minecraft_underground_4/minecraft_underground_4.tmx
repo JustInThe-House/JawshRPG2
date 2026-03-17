@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="395">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="407">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -8,9 +8,8 @@
  </properties>
  <tileset firstgid="1" source="../../tilesets/minecraft.tsx"/>
  <tileset firstgid="181" source="../../tilesets/minecraft_fire.tsx"/>
- <tileset firstgid="213" source="../../tilesets/castle.tsx"/>
- <tileset firstgid="253" source="../../tilesets/objects_3x3.tsx"/>
- <tileset firstgid="254" source="../../tilesets/shading.tsx"/>
+ <tileset firstgid="213" source="../../tilesets/shading.tsx"/>
+ <tileset firstgid="218" source="../../tilesets/shading.tsx"/>
  <layer id="1" name="Tile Layer 1" width="64" height="48">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,153,16,18,16,16,16,16,16,16,18,18,16,16,18,18,
@@ -262,16 +261,6 @@
    </properties>
    <point/>
   </object>
-  <object id="261" gid="254" x="920" y="1080" width="119.829" height="280" rotation="180"/>
-  <object id="250" gid="254" x="1800" y="1040" width="79.8295" height="200" rotation="180"/>
-  <object id="251" gid="254" x="2120" y="600" width="119.829" height="240" rotation="180"/>
-  <object id="252" gid="254" x="2480" y="600" width="119.829" height="240" rotation="180"/>
-  <object id="253" gid="254" x="2280" y="1400" width="79.829" height="240" rotation="180"/>
-  <object id="258" gid="254" x="1520" y="640" width="119.829" height="200" rotation="180"/>
-  <object id="262" gid="254" x="2000" y="1440" width="119.829" height="240" rotation="180"/>
-  <object id="263" gid="254" x="1560" y="1520" width="39.829" height="240" rotation="180"/>
-  <object id="264" gid="254" x="1640" y="1560" width="79.829" height="240" rotation="180"/>
-  <object id="265" gid="254" x="1680" y="1560" width="39.829" height="200" rotation="180"/>
   <object id="266" name="script" x="440" y="480" width="40" height="120">
    <properties>
     <property name="cutscene" value="minecraft_underground_4.cornered"/>
@@ -313,6 +302,17 @@
    </properties>
    <point/>
   </object>
+  <object id="396" gid="217" x="2480" y="600" width="120" height="240" rotation="180"/>
+  <object id="397" gid="222" x="2120" y="600" width="120" height="240" rotation="180"/>
+  <object id="398" gid="222" x="2000" y="1480" width="120" height="200" rotation="180"/>
+  <object id="399" gid="222" x="2280" y="1440" width="80" height="200" rotation="180"/>
+  <object id="400" gid="222" x="1640" y="1600" width="80" height="200" rotation="180"/>
+  <object id="401" gid="222" x="1680" y="1600" width="40" height="160" rotation="180"/>
+  <object id="402" gid="222" x="1560" y="1520" width="40" height="240" rotation="180"/>
+  <object id="403" gid="222" x="1800" y="1080" width="80" height="160" rotation="180"/>
+  <object id="404" gid="222" x="1520" y="680" width="80" height="160" rotation="180"/>
+  <object id="405" gid="222" x="1440" y="600" width="40" height="240" rotation="180"/>
+  <object id="406" gid="222" x="920" y="1120" width="120" height="240" rotation="180"/>
  </objectgroup>
  <objectgroup color="#7f00ff" id="3" name="markers">
   <object id="144" name="entry" x="380" y="510">

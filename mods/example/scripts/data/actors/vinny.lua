@@ -11,7 +11,7 @@ function actor:init()
     self.height = 34
 
     -- Hitbox for this actor in the overworld (optional, uses width and height by default)
-    self.hitbox = {5, 22, 14, 12}
+    self.hitbox = {4, 22, 14, 12}
     
     -- A table that defines where the Soul should be placed on this actor if they are a player.
     -- First value is x, second value is y.
@@ -79,10 +79,10 @@ function actor:init()
     -- Table of sprite offsets (indexed by sprite name)
     self.offsets = {
         -- Movement offsets
-        ["walk/down"] = {0, 0},
+        ["walk/down"] = {-1, 0},
         ["walk/left"] = {3, 0},
         ["walk/right"] = {0, 0},
-        ["walk/up"] = {0, 1},
+        ["walk/up"] = {-1, 1},
 
         ["slide"] = {-2, 2},
 

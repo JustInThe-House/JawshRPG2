@@ -13,7 +13,6 @@ function Mine:init()
 end
 
 function Mine:onStart()
-    Kristal.Console:log(self.happyguy.layer)
     self.happyguy.layer = BATTLE_LAYERS["above_bullets"]
     self.attackers = self:getAttackers()
 

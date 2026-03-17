@@ -8,7 +8,6 @@
  </properties>
  <tileset firstgid="1" source="../../tilesets/minecraft.tsx"/>
  <tileset firstgid="181" source="../../tilesets/minecraft_fire.tsx"/>
- <tileset firstgid="213" source="../../tilesets/castle.tsx"/>
  <layer id="1" name="Tile Layer 1" width="40" height="48">
   <data encoding="csv">
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,

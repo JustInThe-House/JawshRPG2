@@ -8,11 +8,7 @@
  </properties>
  <tileset firstgid="1" source="../../tilesets/minecraft.tsx"/>
  <tileset firstgid="181" source="../../tilesets/minecraft_fire.tsx"/>
- <tileset firstgid="213" source="../../tilesets/castle.tsx"/>
- <tileset firstgid="253" source="../../tilesets/objects_3x3.tsx"/>
- <tileset firstgid="254" source="../../tilesets/shading.tsx"/>
- <tileset firstgid="260" source="../../tilesets/minecraft_lava.tsx"/>
- <tileset firstgid="280" source="../../tilesets/minecraft_trees.tsx"/>
+ <tileset firstgid="213" source="../../tilesets/shading.tsx"/>
  <layer id="1" name="Tile Layer 1" width="60" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

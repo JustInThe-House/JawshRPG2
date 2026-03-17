@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 9,
-  nextobjectid = 41,
+  nextobjectid = 43,
   properties = {
     ["light"] = true
   },
@@ -22,9 +22,10 @@ return {
       exportfilename = "../../tilesets/jawsh_house.lua"
     },
     {
-      name = "jawsh_house_object",
+      name = "jawsh_house_objects",
       firstgid = 25,
-      filename = "../../tilesets/jawsh_house_object.tsx"
+      filename = "../../tilesets/jawsh_house_objects.tsx",
+      exportfilename = "../../tilesets/jawsh_house_objects.lua"
     }
   },
   layers = {
@@ -330,34 +331,6 @@ return {
           }
         },
         {
-          id = 18,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 260,
-          y = 440,
-          width = 120,
-          height = 80,
-          rotation = 0,
-          gid = 25,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 19,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 320,
-          y = 220,
-          width = 120,
-          height = 80,
-          rotation = 0,
-          gid = 26,
-          visible = true,
-          properties = {}
-        },
-        {
           id = 22,
           name = "interactable",
           type = "",
@@ -451,6 +424,34 @@ return {
             ["text1"] = "* A closet with a bunch of broken shelves.",
             ["text2"] = "* Youtooz of Miniladd and Jontron are on the floor."
           }
+        },
+        {
+          id = 41,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 320,
+          y = 220,
+          width = 120,
+          height = 80,
+          rotation = 0,
+          gid = 25,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 42,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 260,
+          y = 440,
+          width = 120,
+          height = 80,
+          rotation = 0,
+          gid = 26,
+          visible = true,
+          properties = {}
         }
       }
     },

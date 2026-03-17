@@ -293,7 +293,7 @@ function GameOver:update()
             self.dialogue:fadeOutAndRemove(fade_speed)
         end)
         self.dialogue:setPosition(0, SCREEN_HEIGHT * 0.85)
-        self.dialogue:setText("[noskip][speed:0.0021][spacing:64][voice:none]RIP")
+        self.dialogue:setText("[noskip][speed:0.00227][spacing:64][voice:none]RIP")
         -- self.dialogue:remove()
 
         self.music:play("AUDIO_DARKNESS") -- find a time where he says this game sucks replace with this

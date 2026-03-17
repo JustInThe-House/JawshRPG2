@@ -19,12 +19,6 @@ return {
       name = "poniko_room",
       firstgid = 1,
       filename = "../../tilesets/poniko_room.tsx"
-    },
-    {
-      name = "minecraft",
-      firstgid = 4,
-      filename = "../../tilesets/minecraft.tsx",
-      exportfilename = "../../tilesets/minecraft.lua"
     }
   },
   layers = {

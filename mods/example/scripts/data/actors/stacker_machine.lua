@@ -46,12 +46,13 @@ function actor:init()
 end
 
 function actor:onSpriteDraw(sprite)
+    self.bounce = self.bounce + DT * 1
     if Game.battle.state ~= nil and Game.battle.state ~= "DEFENDING" then
-        self.bounce = self.bounce + DT * 2
+        self.bounce = self.bounce + DT * 1
+    end
         sprite.scale_x = sprite.scale_x + math.cos(self.bounce) / 1000
         sprite:setScaleOrigin(math.sin(self.bounce) / 6, 0.5)
         sprite:setShear(0, (math.cos(self.bounce) / 2) ^ 2)
-    end
 end
 
 function actor:onSetSprite(sprite, texture, keep_anim)

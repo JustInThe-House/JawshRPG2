@@ -2,16 +2,13 @@ return {
   version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.11.2",
-  name = "jawsh_house_object",
+  name = "jawsh_house_objects",
   class = "",
   tilewidth = 120,
   tileheight = 80,
   spacing = 0,
   margin = 0,
-  columns = 1,
-  image = "../../../assets/sprites/tilesets/jawsh_house_object.png",
-  imagewidth = 120,
-  imageheight = 160,
+  columns = 0,
   objectalignment = "unspecified",
   tilerendersize = "tile",
   fillmode = "stretch",
@@ -21,11 +18,24 @@ return {
   },
   grid = {
     orientation = "orthogonal",
-    width = 120,
-    height = 80
+    width = 1,
+    height = 1
   },
   properties = {},
   wangsets = {},
   tilecount = 2,
-  tiles = {}
+  tiles = {
+    {
+      id = 0,
+      image = "../../../assets/sprites/tilesets/jawsh_house_objects/couch.png",
+      width = 120,
+      height = 80
+    },
+    {
+      id = 1,
+      image = "../../../assets/sprites/tilesets/jawsh_house_objects/desk.png",
+      width = 120,
+      height = 80
+    }
+  }
 }

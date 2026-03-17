@@ -62,7 +62,7 @@ function actor:onSpriteUpdate(sprite)
     if sprite.sample_timer > 0.05 then
         local u1, u2 = MathUtils.random(0, 1), MathUtils.random(0, 1)
         local rand = math.sqrt(-2 * math.log(u1)) * math.cos(2 * math.pi * u2)
-        sprite.sum = sprite.sum + rand - DT * 1.5
+        sprite.sum = sprite.sum + rand - DT * 2
         if sprite.sum > 17 or sprite.sum < -20 then
             sprite.sum = MathUtils.approach(sprite.sum, 0, 100 * DT)
         end

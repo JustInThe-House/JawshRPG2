@@ -1,5 +1,8 @@
 local PickaxeUpdown, super = Class(Wave)
 
+-- coal attack: coughs, shakes arena, coul dust fogs up arena, coal textures you have to dodge
+-- get coughing sound from video
+
 function PickaxeUpdown:init()
     super.init(self)
     self:setArenaSize(142 * 1.5, 142 * 0.75)

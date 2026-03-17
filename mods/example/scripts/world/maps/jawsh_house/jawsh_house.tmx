@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="41">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="43">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -7,7 +7,7 @@
   <property name="light" type="bool" value="true"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/jawsh_house.tsx"/>
- <tileset firstgid="25" source="../../tilesets/jawsh_house_object.tsx"/>
+ <tileset firstgid="25" source="../../tilesets/jawsh_house_objects.tsx"/>
  <layer id="1" name="Tile Layer 1" width="15" height="12">
   <data encoding="csv">
 0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,
@@ -84,8 +84,6 @@
     <property name="text" value="* Your computer.[wait:7] The 14th-gen Intel CPU is slowly oxidizing."/>
    </properties>
   </object>
-  <object id="18" gid="25" x="260" y="440" width="120" height="80"/>
-  <object id="19" gid="26" x="320" y="220" width="120" height="80"/>
   <object id="22" name="interactable" x="340" y="180" width="80" height="40">
    <properties>
     <property name="text" value="* A couch large enough to fit three...[wait:5] no,[wait:5] two...[wait:10] one person.[wait:10] You."/>
@@ -124,6 +122,8 @@ you'll fail everyone.</property>
     <property name="text2" value="* Youtooz of Miniladd and Jontron are on the floor."/>
    </properties>
   </object>
+  <object id="41" gid="25" x="320" y="220" width="120" height="80"/>
+  <object id="42" gid="26" x="260" y="440" width="120" height="80"/>
  </objectgroup>
  <objectgroup color="#7f00ff" id="3" name="markers">
   <object id="11" name="spawn" x="410" y="185">
