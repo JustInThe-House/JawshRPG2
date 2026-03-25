@@ -3,7 +3,6 @@ local SpinPickaxe, super = Class(Wave)
 function SpinPickaxe:init()
     super.init(self)
     self.time = 10
-    Game.battle.encounter.difficulty = 1
     self.num_picks = 0
     self.max_picks = 3 + Game.battle.encounter.difficulty
     self.timer_spawn = 0.3

@@ -8,8 +8,6 @@ function Mine:init()
     self.shaking = false
     self.solids = {}
     self.happyguy = Game.battle:getEnemyBattler("happyguy")
-
-    --  self.timer:tween(0.35, Game.battle:getEnemyBattler("soyingjawsh").arm, { rotation = 0 },"out-quad")
 end
 
 function Mine:onStart()
@@ -25,7 +23,7 @@ function Mine:onStart()
     Assets.playSound("jump", 1, 1)
 
 
-    self.timer:every(1.3, function()
+    self.timer:every(Game.battle.encounter.difficulty >= 2 and 1.25 or 1.3, function()
         for _, attacker in ipairs(self.attackers) do
             local start_direction = TableUtils.pick({ "left", "right" })
             local start_location = SCREEN_WIDTH + 40
@@ -61,8 +59,8 @@ function Mine:onStart()
                 local x, y = attacker:getRelativePos((attacker.width / 2),
                                                      (attacker.height / 2))
                 local pitch_up = 0
-                for i = 1, 6 do
-                    self:spawnBullet("gravityblock", x, y,
+                for i = 1, 4 + Game.battle.encounter.difficulty do
+                    self:spawnBullet("stone_gravity", x, y,
                                      -math.pi / 2 + MathUtils.random(-math.pi / 6, math.pi / 6),
                                      MathUtils.random(11, 13))
                 end
@@ -76,7 +74,7 @@ function Mine:onStart()
                 self.timer:every(0.1, function()
                                      x, y = attacker:getRelativePos((attacker.width / 2),
                                                                     (attacker.height / 2))
-                                     self:spawnBullet("gravityblock", x, y,
+                                     self:spawnBullet("stone_gravity", x, y,
                                                       -math.pi / 2 + MathUtils.random(-math.pi / 6, math.pi / 6),
                                                       MathUtils.random(6, 8))
                                      Assets.playSound("minecraft/stonecutter", 1, 1 + pitch_up / 5)

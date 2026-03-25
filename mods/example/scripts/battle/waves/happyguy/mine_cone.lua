@@ -17,7 +17,7 @@ function MineCone:onStart()
                           "outQuad")
     Assets.playSound("jump", 1, 1)
 
-    self.timer:every(Game.battle.encounter.difficulty >= 2 and 0.9 or 1, function()
+    self.timer:every(Game.battle.encounter.difficulty >= 2 and 0.95 or 1, function()
         for _, attacker in ipairs(self.attackers) do
             local start_direction = TableUtils.pick({ "left", "right" })
             local start_location = SCREEN_WIDTH + 40

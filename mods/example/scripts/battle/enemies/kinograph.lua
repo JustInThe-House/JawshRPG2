@@ -19,7 +19,8 @@ function Kinograph:init()
     }
 
     self.waves = {
-        "skeleton/multi_shot"
+        "kinograph/snake",
+        "kinograph/line_chase"
     }
 
     self.dialogue = {

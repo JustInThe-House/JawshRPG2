@@ -50,8 +50,8 @@ function Question:onStart()
                 Game.battle:infoText("         " .. question)
             end
         elseif question == 2 then
-            number = math.random(0, 10)
-            number2 = math.random(0, 10)
+            number = math.random(1, 12)
+            number2 = math.random(1, 12)
             answer = number * number2
             self.answers = { answer, (number + 1) * number2, answer + math.random(1, 8), answer - math.random(1, 8) }
             Game.battle:infoText("               " .. number .. "x" .. number2 .. " = ?")

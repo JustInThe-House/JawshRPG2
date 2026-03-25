@@ -12,7 +12,7 @@ function HappyGuy:init()
     self.battleroom_upper = "minecraft"
     self.battleroom_lower = nil
     self.battleroom_bg = nil
-    self.music = "battle"
+    self.music = "happyguy_battle"
 end
 
 return HappyGuy

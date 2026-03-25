@@ -11,8 +11,9 @@ return {
   tileheight = 40,
   nextlayerid = 8,
   nextobjectid = 39,
+  backgroundcolor = { 255, 255, 255 },
   properties = {
-    ["light"] = true
+    ["light"] = false
   },
   tilesets = {},
   layers = {
@@ -166,32 +167,6 @@ return {
           properties = {}
         },
         {
-          id = 8,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 440,
-          y = 140,
-          width = 40,
-          height = 300,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 10,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 80,
-          y = 140,
-          width = 360,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
           id = 20,
           name = "",
           type = "",
@@ -200,19 +175,6 @@ return {
           y = 420,
           width = 100,
           height = 20,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 21,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 330,
-          y = 180,
-          width = 90,
-          height = 35,
           rotation = 0,
           visible = true,
           properties = {}
@@ -302,21 +264,6 @@ return {
           visible = true,
           properties = {
             ["text"] = "* Your computer.[wait:7] The 14th-gen Intel CPU is slowly oxidizing."
-          }
-        },
-        {
-          id = 22,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 340,
-          y = 180,
-          width = 80,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text"] = "* A couch large enough to fit three...[wait:5] no,[wait:5] two...[wait:10] one person.[wait:10] You."
           }
         },
         {
@@ -414,19 +361,6 @@ return {
       parallaxy = 1,
       properties = {},
       objects = {
-        {
-          id = 11,
-          name = "spawn",
-          type = "",
-          shape = "point",
-          x = 410,
-          y = 185,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
         {
           id = 28,
           name = "stand_up",

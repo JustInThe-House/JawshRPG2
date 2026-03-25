@@ -7,11 +7,11 @@ function actor:init()
     self.name = "Enderman"
 
     -- Width and height for this actor, used to determine its center
-    self.scaling = 0.25
+    self.scaling = 0.4
     self.width_offset = 5
     self.hitbox_scaling = 1/3
-    self.width = 89*self.scaling
-    self.height = 291*self.scaling
+    self.width = 80*self.scaling
+    self.height = 160*self.scaling
 
     -- Hitbox for this actor in the overworld (optional, uses width and height by default)
     self.hitbox = { self.width_offset, self.height*(1-self.hitbox_scaling), self.width-self.width_offset, self.height*self.hitbox_scaling }
@@ -33,7 +33,7 @@ function actor:init()
 
     -- Table of sprite animations
     self.animations = {
-        ["idle"] = { "idle", 0.25, true },
+        ["idle"] = { "idle", MathUtils.random(0.22,0.28), true },
 
     }
 

@@ -116,9 +116,7 @@ cutscene:setSpeaker(vinny)
         cutscene:text("* See?", "neutral")
 
         cutscene:setSpeaker(jawsh)
-        cutscene:text("* What the hell?", "neutral")
-        cutscene:text("* Why can't I then?", "neutral")
-
+        cutscene:text("* What the hell?[wait:5] Why can't I then?", "neutral")
 
         cutscene:setSpeaker(vinny)
         cutscene:text("* I think you've gotten a little TOO online,[wait:3] Jawsh.", "happy")
@@ -136,7 +134,6 @@ cutscene:setSpeaker(vinny)
         cutscene:text("* Vinny joined the party!")
 
         Game:setFlag("met_vinny", true)
-        -- add vinny to team
     end,
     transition = function(cutscene, event)
         local jawsh = cutscene:getCharacter("jawsh")

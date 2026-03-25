@@ -16,7 +16,7 @@ jawsh:setFacing("up")
         cutscene:text("* The bridge I built to the castle top broke down!",{ top = false })
         cutscene:text("* Did another Player do this...?",{ top = false })
         happyguy:setSprite("walk/down")
-        cutscene:text("* I'm sorry guys,[wait:5] but without that bridge,[wait:5] we're kinda just stuck here.",{ top = false })
+        cutscene:text("* I'm sorry guys,[wait:3] but without that bridge,[wait:3] we're kinda just stuck here.",{ top = false })
         cutscene:setSpeaker(jawsh)
         cutscene:wait(0.7)
         pan_time = 0.5

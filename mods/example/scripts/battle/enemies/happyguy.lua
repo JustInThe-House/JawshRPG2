@@ -14,7 +14,7 @@ function HappyGuy:init() -- on addenemy, any extra arguments put in the parenthe
     self.height = 131 * 0.3 -- idle sprite size
     self.max_health = 1000
     self.health = 1000
-    self.attack = 10
+    self.attack = 9
     self.defense = 0
     self.money = 400
 
@@ -29,8 +29,9 @@ function HappyGuy:init() -- on addenemy, any extra arguments put in the parenthe
         "happyguy/mine",
         "happyguy/mine_cone",
         "happyguy/pickaxe_spin",
-        "happyguy/pickaxe_updown",
-        -- 1 more normal, 1 special attack
+        "happyguy/pickaxe_tunnel",
+        "happyguy/coal_cough",
+        -- 1 special attack
     }
 
     self.dialogue = {

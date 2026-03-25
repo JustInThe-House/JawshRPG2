@@ -30,7 +30,7 @@ function actor:init()
     -- Path to this actor's portrait for dialogue (optional)
     self.portrait_path = "face/happyguy"
     -- Offset position for this actor's portrait (optional)
-    self.portrait_offset = {-33,-6}
+    self.portrait_offset = {-33,-13}
 
     -- Table of sprite animations
     self.animations = {
@@ -42,6 +42,7 @@ function actor:init()
         ["idle"] = { "idle", 0.11, true },
         ["jump"] = { "jump", 0.05, true },
         ["mine"] = { "mine", 0.05, true },
+        ["cough"] = { "cough", 0.05, true },
 
     }
 
@@ -56,6 +57,7 @@ function actor:init()
         ["idle"] = { 0, 0 },
         ["jump"] = { 20, -24 },
         ["mine"] = { 20, -12 },
+        ["cough"] = { 0, 0 },
     }
 end
 

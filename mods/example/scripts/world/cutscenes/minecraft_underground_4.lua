@@ -4,14 +4,14 @@ return {
         local jawsh = cutscene:getCharacter("jawsh")
         local happyguy = cutscene:getCharacter("happyguy")
         cutscene:setSpeaker(happyguy)
-        cutscene:text("* Aaaaaahh![wait:5] Help meeeee!")
+        cutscene:text("* Aaaaaahh![wait:7] Help meeeee!", "sad")
         cutscene:detachCamera()
         local time_pan_1 = 1.5
         cutscene:panTo("cornered", time_pan_1)
         cutscene:wait(time_pan_1)
-        cutscene:text("* Why are you doing this enderman?", { top = false })
-        cutscene:text("* I thought you would be my frienderman!!", { top = false })
-        cutscene:text("* Help![wait:5] Heeeeeeelp!", { top = false })
+        cutscene:text("* Why are you doing this,[wait:3] enderman?", "sad", { top = false })
+        cutscene:text("* I thought you would be my frienderman!!", "sad", { top = false })
+        cutscene:text("* Help![wait:7] Heeeeeeelp!", "sad", { top = false })
         cutscene:attachCamera(time_pan_1)
         cutscene:wait(time_pan_1)
         cutscene:setSpeaker()
@@ -34,7 +34,7 @@ return {
         cutscene:detachFollowers()
         cutscene:detachCamera()
 
-        jawsh:setSprite("walk/up")
+        jawsh:setFacing("up")
         local time_pan_1 = 0.7
         vinny:walkTo(dropdown_x + 20, dropdown_y + 60, time_pan_1, "up")
         jawsh:walkTo(dropdown_x - 20, dropdown_y + 60, time_pan_1, "up")
@@ -42,7 +42,7 @@ return {
         cutscene:wait(time_pan_1)
 
         cutscene:setSpeaker(happyguy)
-        cutscene:text("* Please,[wait:5] guys![wait:5] Help me out!", { top = false })
+        cutscene:text("* Please,[wait:5] guys![wait:5] Help me out!", "sad", { top = false })
         cutscene:wait(0.2)
         cutscene:startEncounter("enderman_2", true, { { "enderman:1", enderman1 }, { "enderman:2", enderman2 } })
         Game:setFlag("fought_endermen", true)
@@ -51,7 +51,7 @@ return {
         cutscene:text("* Hooray![wait:5] You saved me!")
         cutscene:setSpeaker(jawsh)
 
-        cutscene:text("* Look man,[wait:5] you're clearly not cut out for fighting down here.", "neutral")
+        cutscene:text("* Look man,[wait:3] you're clearly not cut out for fighting down here.", "neutral")
 
         cutscene:text("* Why don't you just join our party and--", "happy",
                       { advance = true, auto = true })
@@ -65,10 +65,10 @@ return {
 
         happyguy:setFacing("right")
 
-        cutscene:text("* Anyways,[wait:5] if you hit that lever,[wait:5] you'll shut off the smoke stacks.",
+        cutscene:text("* Anyways,[wait:3] if you hit that lever,[wait:3] you'll shut off the smoke stacks.", "neutral_right",
             { top = false })
 
-        cutscene:text("* I'll head back so we can clear it out faster!", { top = false })
+        cutscene:text("* I'll head back so we can clear it out faster!", "teeth_forward", { top = false })
         happyguy:setFacing("down")
         happyguy:resetSprite()
 
@@ -78,7 +78,7 @@ return {
         end)
         cutscene:wait(0.5)
         cutscene:setSpeaker(jawsh)
-        cutscene:text("* No,[wait:3] no,[wait:3] no,[wait:3] just hold on a second and we can--", "mad", { top = false })
+        cutscene:text("* No,[wait:2] no,[wait:2] no,[wait:3] just hold on a second and we can--", "mad", { top = false })
         --[[cutscene:wait(0.5)
         jawsh:setSprite("walk/right")
         cutscene:wait(0.2)

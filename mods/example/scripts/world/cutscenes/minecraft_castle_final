@@ -1,0 +1,96 @@
+return {
+    enter = function(cutscene)
+        local vinny = cutscene:getCharacter("vinny")
+        local jawsh = cutscene:getCharacter("jawsh")
+        local happyguy = cutscene:getCharacter("happyguy")
+
+
+        jawsh:setFacing("up")
+        vinny:setFacing("walk/up")
+        cutscene:setSpeaker(happyguy)
+        cutscene:text("* Oh no!!!!")
+        cutscene:detachCamera()
+        local pan_time = 1
+        cutscene:panTo("bridge_broke", pan_time)
+        cutscene:wait(pan_time)
+        cutscene:text("* The bridge I built to the castle top broke down!", { top = false })
+        cutscene:text("* Did another Player do this...?", { top = false })
+        happyguy:setSprite("walk/down")
+        cutscene:text("* I'm sorry guys,[wait:3] but without that bridge,[wait:3] we're kinda just stuck here.",
+                      { top = false })
+        cutscene:setSpeaker(jawsh)
+        cutscene:wait(0.7)
+        pan_time = 0.5
+        jawsh:setFacing("up")
+        cutscene:wait(pan_time)
+        jawsh:setFacing("right")
+        cutscene:wait(pan_time)
+        jawsh:setFacing("up")
+        cutscene:wait(pan_time)
+        jawsh:setFacing("right")
+        cutscene:wait(pan_time)
+        jawsh:setFacing("up")
+        cutscene:wait(0.3)
+        cutscene:text("* ...[wait:7]Oh boy.", "neutral", { top = false })
+        cutscene:text("* I think I know what I have to do.", "neutral", { top = false })
+        jawsh:resetSprite()
+        vinny:resetSprite()
+        cutscene:attachCamera(0.5)
+        cutscene:wait(0.5)
+    end,
+    fight = function(cutscene)
+        local vinny = cutscene:getCharacter("vinny")
+        local jawsh = cutscene:getCharacter("jawsh")
+        local happyguy = cutscene:getCharacter("happyguy")
+
+        cutscene:setSpeaker(jawsh)
+        cutscene:text("* Well,[wait:3] we finally made it.", "neutral")
+
+        local pan_time = 1.5
+        cutscene:panTo("bridge_broke", pan_time)
+        cutscene:wait(1.5)
+
+        cutscene:setSpeaker(happyguy)
+        cutscene:text("* Here's the thingie I was talking about!")
+        cutscene:text("* It looks pretty creepy,[wait:3] but...")
+        cutscene:text("* ...It feels as though it's the bedrock of this place.")
+        cutscene:text("* Like it gives me and this world...[wait:10] life.")
+        cutscene:text("* ...It feels as though it's the bedrock of this place.")
+
+        cutscene:wait(1)
+        cutscene:text("* Anyways,[wait:3] why were you looking for it?")
+
+        cutscene:wait(2)
+        cutscene:setSpeaker(jawsh)
+        cutscene:text("* ...[wait:5]Yeah,[wait:3] about that...")
+        cutscene:text("* We [speed:0.7]kiiiii[speed:1]nda need to bring that back with us.")
+        cutscene:text("* We're not from this place,[wait:3] and I need that fragment to get home.")
+
+
+
+
+        cutscene:startEncounter("happyguy")
+
+        --update shit
+        Game.world.map:getTileLayer("platform").visible = true
+        Game:setFlag("cobblegen_puzzle", true)
+        Game.inventory:removeItem("lavawaterbucket")
+
+        cutscene:fadeIn(1)
+        happyguy:setAnimation({ "wave", 0.1, true })
+
+        cutscene:setSpeaker(happyguy)
+        cutscene:text("* Hooray! You did it!")
+        cutscene:setSpeaker(jawsh)
+        cutscene:text("* ...[wait:5]I'm honestly surprised I remembered.", "neutral", { top = false })
+        cutscene:setSpeaker(happyguy)
+        cutscene:text("* Well,[wait:5] come on!")
+        cutscene:text("* With how high we are,[wait:5] it should be a quick trip!")
+        happyguy:setFacing("up")
+        happyguy:resetSprite()
+        happyguy:walkTo("return", 1.4, "up", true, "linear", function()
+            happyguy.x = happyguy.x + 200
+            happyguy.visible = false
+        end)
+    end,
+}

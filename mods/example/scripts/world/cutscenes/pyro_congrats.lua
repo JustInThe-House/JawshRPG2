@@ -29,7 +29,7 @@ return {
             -- cutscene:text("* The [image:emotes/grand_prize,0,0,2,2] !!!!", "idle")
             local grand_prize = Game.stage:addChild(grand_prize(397, 355))
             cutscene:text("* The                  !!!", "idle")
-            grand_prize:remove()
+            grand_prize:remove() --there is a better way to do this, i forgor
             cutscene:panTo(px1, py1 - 300, 2)
             cutscene:wait(2.5)
             Game.world.timer:tween(0.5, kino, { y = kino.y - 50 }, "in-out-back")

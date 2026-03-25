@@ -9,7 +9,6 @@ function Map:onEnter()
   end
   self.bg = Sprite("backgrounds/smplive")
   self.bg.layer = WORLD_LAYERS["bottom"]
-  --self.bg:setScale(1.5)
   self.bg:setParallax(0.1,0.1)
   Game.world:addChild(self.bg)
 end

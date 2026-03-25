@@ -51,7 +51,7 @@ function item:onEquip(chara)
         if chara.name == "Jawsh" then
             cutscene:text("* Walk with me!", "happy", "jawsh")
         elseif chara.name == "Vinny" then
-            cutscene:text("* Gotta do a beer mile in these!", "neutral", "vinny")
+            cutscene:text("* I'm not taking my sneakers off,[wait:7]\nI[wait:2] am[wait:2] Sneakers O'[wait:1]Toole!", "neutral", "vinny")
         end
         cutscene:after(function ()
             Game.world:openMenu(nil, WORLD_LAYERS["ui"] + 1)

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="39">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="12" tilewidth="40" tileheight="40" infinite="0" backgroundcolor="#ffffff" nextlayerid="8" nextobjectid="39">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
-  <property name="light" type="bool" value="true"/>
+  <property name="light" type="bool" value="false"/>
  </properties>
  <layer id="1" name="Tile Layer 1" width="15" height="12">
   <data encoding="csv">
@@ -58,10 +58,7 @@
   <object id="3" x="80" y="180" width="40" height="100"/>
   <object id="5" x="160" y="280" width="40" height="200"/>
   <object id="6" x="200" y="440" width="280" height="40"/>
-  <object id="8" x="440" y="140" width="40" height="300"/>
-  <object id="10" x="80" y="140" width="360" height="40"/>
   <object id="20" x="260" y="420" width="100" height="20"/>
-  <object id="21" x="330" y="180" width="90" height="35"/>
   <object id="35" x="80" y="280" width="80" height="40"/>
   <object id="38" x="200" y="386" width="32" height="54"/>
  </objectgroup>
@@ -79,11 +76,6 @@
   <object id="15" name="interactable" x="340" y="420" width="40" height="20">
    <properties>
     <property name="text" value="* Your computer.[wait:7] The 14th-gen Intel CPU is slowly oxidizing."/>
-   </properties>
-  </object>
-  <object id="22" name="interactable" x="340" y="180" width="80" height="40">
-   <properties>
-    <property name="text" value="* A couch large enough to fit three...[wait:5] no,[wait:5] two...[wait:10] one person.[wait:10] You."/>
    </properties>
   </object>
   <object id="25" name="interactable" x="280" y="420" width="40" height="20">
@@ -120,9 +112,6 @@ you'll fail everyone.</property>
   </object>
  </objectgroup>
  <objectgroup color="#7f00ff" id="3" name="markers">
-  <object id="11" name="spawn" x="410" y="185">
-   <point/>
-  </object>
   <object id="28" name="stand_up" x="380" y="245">
    <point/>
   </object>

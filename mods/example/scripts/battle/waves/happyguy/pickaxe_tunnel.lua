@@ -8,8 +8,6 @@ function PickaxeUpdown:init()
     self:setArenaSize(142 * 1.5, 142 * 0.75)
     self.time = 8
     self.alpha = 0
-    self.shifting = false
-    self.timer_shift = 0
 end
 
 function PickaxeUpdown:onStart()
@@ -21,7 +19,7 @@ function PickaxeUpdown:onStart()
         self:spawnBullet("iron_pickaxe_tunnel", x, y - gap, math.pi, 11, math.pi / 2)
     end)
 
-    self.timer:every(Game.battle.encounter.difficulty >= 2 and 0.8 or Game.battle.encounter.difficulty == 1 and 1 or 1.5, function()
+    self.timer:every(Game.battle.encounter.difficulty >= 1 and 1 or 1.5, function()
         local top_row = TableUtils.filter(self.bullets, function(e) return e.y <= Game.battle.arena.y end)
         local bottom_row = TableUtils.filter(self.bullets, function(e) return e.y > Game.battle.arena.y end)
         local select_row = TableUtils.pick({ top_row, bottom_row })
@@ -30,7 +28,11 @@ function PickaxeUpdown:onStart()
         for _, bullet in ipairs(select_row) do
             if bullet.state ~= "STOP" then
                 bullet.state = "SHIFT"
-                self.timer:tween(0.7, bullet, { y = bullet.y + (bullet.y > Game.battle.arena.y and -1 or 1) * gap },
+                local tween_speed = 0.7
+                if Game.battle.encounter.difficulty >= 2 then
+                    tween_speed = 0.63
+                end
+                self.timer:tween(tween_speed, bullet, { y = bullet.y + (bullet.y > Game.battle.arena.y and -1 or 1) * gap },
                     "in-back")
                 self.timer:tween(0.3, bullet, { y = bullet.y + (bullet.y > Game.battle.arena.y and 1 or -1) * 10 },
                     "linear")

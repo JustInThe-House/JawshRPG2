@@ -30,12 +30,8 @@ return {
     {
       name = "shading",
       firstgid = 213,
-      filename = "../../tilesets/shading.tsx"
-    },
-    {
-      name = "shading",
-      firstgid = 218,
-      filename = "../../tilesets/shading.tsx"
+      filename = "../../tilesets/shading.tsx",
+      exportfilename = "../../tilesets/shading.lua"
     }
   },
   layers = {
@@ -1741,7 +1737,7 @@ return {
           width = 120,
           height = 240,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1755,7 +1751,7 @@ return {
           width = 120,
           height = 200,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1769,7 +1765,7 @@ return {
           width = 80,
           height = 200,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1783,7 +1779,7 @@ return {
           width = 80,
           height = 200,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1797,7 +1793,7 @@ return {
           width = 40,
           height = 160,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1811,7 +1807,7 @@ return {
           width = 40,
           height = 240,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1825,7 +1821,7 @@ return {
           width = 80,
           height = 160,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1839,7 +1835,7 @@ return {
           width = 80,
           height = 160,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1853,7 +1849,7 @@ return {
           width = 40,
           height = 240,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         },
@@ -1867,7 +1863,7 @@ return {
           width = 120,
           height = 240,
           rotation = 180,
-          gid = 222,
+          gid = 217,
           visible = true,
           properties = {}
         }

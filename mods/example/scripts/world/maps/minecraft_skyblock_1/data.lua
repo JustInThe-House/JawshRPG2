@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 15,
-  nextobjectid = 446,
+  nextobjectid = 449,
   properties = {
     ["music"] = "stal"
   },
@@ -259,20 +259,7 @@ return {
           x = 440,
           y = 760,
           width = 30,
-          height = 120,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 296,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 600,
-          y = 160,
-          width = 40,
-          height = 240,
+          height = 440,
           rotation = 0,
           visible = true,
           properties = {}
@@ -376,7 +363,7 @@ return {
           x = 580,
           y = 0,
           width = 80,
-          height = 40,
+          height = 20,
           rotation = 0,
           visible = true,
           properties = {}
@@ -460,27 +447,41 @@ return {
           properties = {}
         },
         {
-          id = 442,
+          id = 447,
           name = "",
           type = "",
-          shape = "rectangle",
-          x = 580,
-          y = 320,
-          width = 20,
-          height = 40,
+          shape = "polygon",
+          x = 600,
+          y = 160,
+          width = 0,
+          height = 0,
           rotation = 0,
           visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = 40, y = 0 },
+            { x = 40, y = 40 },
+            { x = 60, y = 40 },
+            { x = 60, y = 80 },
+            { x = 40, y = 80 },
+            { x = 40, y = 240 },
+            { x = 0, y = 240 },
+            { x = 0, y = 200 },
+            { x = -20, y = 200 },
+            { x = -20, y = 160 },
+            { x = 0, y = 160 }
+          },
           properties = {}
         },
         {
-          id = 443,
+          id = 448,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 640,
-          y = 200,
-          width = 20,
-          height = 40,
+          x = 530,
+          y = 880,
+          width = 40,
+          height = 320,
           rotation = 0,
           visible = true,
           properties = {}
@@ -551,7 +552,7 @@ return {
           type = "",
           shape = "rectangle",
           x = 440,
-          y = 600,
+          y = 590,
           width = 200,
           height = 40,
           rotation = 0,
@@ -685,7 +686,7 @@ return {
           type = "",
           shape = "point",
           x = 620,
-          y = 580,
+          y = 550,
           width = 0,
           height = 0,
           rotation = 0,
@@ -721,9 +722,7 @@ return {
           visible = true,
           properties = {
             ["flag"] = "!cobblegen_puzzle",
-            ["target1"] = { id = 442 },
-            ["target2"] = { id = 443 },
-            ["target3"] = { id = 296 }
+            ["target1"] = { id = 447 }
           }
         }
       }

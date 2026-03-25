@@ -1,0 +1,473 @@
+return {
+  version = "1.11",
+  luaversion = "5.1",
+  tiledversion = "1.11.2",
+  class = "",
+  orientation = "orthogonal",
+  renderorder = "right-down",
+  width = 36,
+  height = 20,
+  tilewidth = 40,
+  tileheight = 40,
+  nextlayerid = 15,
+  nextobjectid = 462,
+  properties = {
+    ["music"] = "stal"
+  },
+  tilesets = {
+    {
+      name = "minecraft",
+      firstgid = 1,
+      filename = "../../tilesets/minecraft.tsx",
+      exportfilename = "../../tilesets/minecraft.lua"
+    },
+    {
+      name = "minecraft_fire",
+      firstgid = 181,
+      filename = "../../tilesets/minecraft_fire.tsx",
+      exportfilename = "../../tilesets/minecraft_fire.lua"
+    },
+    {
+      name = "shading",
+      firstgid = 213,
+      filename = "../../tilesets/shading.tsx",
+      exportfilename = "../../tilesets/shading.lua"
+    }
+  },
+  layers = {
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 36,
+      height = 20,
+      id = 1,
+      name = "Tile Layer 1",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0,
+        0, 17, 0, 17, 0, 17, 0, 17, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 17, 17,
+        17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 17, 17, 17, 17,
+        0, 0, 0, 0, 0, 0, 0, 32, 32, 32, 17, 17, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 17, 17, 17, 17, 17, 17,
+        0, 0, 0, 0, 0, 0, 0, 0, 32, 32, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 36,
+      height = 20,
+      id = 5,
+      name = "Tile Layer 2",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 2,
+      name = "collision",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 444,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 400,
+          y = 200,
+          width = 840,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 445,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1200,
+          y = 520,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 446,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 400,
+          y = 520,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 447,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 280,
+          width = 400,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 448,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 440,
+          width = 400,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 449,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 440,
+          y = 560,
+          width = 800,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 450,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 480,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 451,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 360,
+          y = 240,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 455,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1200,
+          y = 240,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 456,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1240,
+          y = 280,
+          width = 200,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 457,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1320,
+          y = 440,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 459,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1240,
+          y = 480,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 4,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 148,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 0,
+          y = 320,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "minecraft_skyblock_1",
+            ["marker"] = "return"
+          }
+        },
+        {
+          id = 417,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 800,
+          y = 280,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "minecraft_skyblock_1.cobblegen"
+          }
+        },
+        {
+          id = 425,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 400,
+          y = 320,
+          width = 40,
+          height = 160,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "minecraft_castle_final.fight"
+          }
+        },
+        {
+          id = 428,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 800,
+          y = 440,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "king",
+            ["cutscene"] = "minecraft_castle_1.push",
+            ["flagcheck"] = "!push_king"
+          }
+        },
+        {
+          id = 460,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 1400,
+          y = 320,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "minecraft_skyblock_1",
+            ["marker"] = "return"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 3,
+      name = "markers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 144,
+          name = "entry",
+          type = "",
+          shape = "point",
+          x = 80,
+          y = 380,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 401,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 520,
+          y = 390,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 402,
+          name = "return",
+          type = "",
+          shape = "point",
+          x = 1360,
+          y = 380,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 8,
+      name = "controllers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 432,
+          name = "toggle",
+          type = "",
+          shape = "point",
+          x = 670,
+          y = 140,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["flag"] = "!cobblegen_puzzle",
+            ["target1"] = { id = 442 }
+          }
+        }
+      }
+    }
+  }
+}
