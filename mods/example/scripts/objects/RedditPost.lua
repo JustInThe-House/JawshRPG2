@@ -3,6 +3,7 @@ local RedditPost, super = Class(Object, "RedditPost")
 -- remove offscreen
 -- spawn and move in one direction
 --image of reddit
+-- make it a partially random size. will need to make sure all sizes of og images work
 
 function RedditPost:init()
     super.init(self, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) -- change w and h to sprite size
